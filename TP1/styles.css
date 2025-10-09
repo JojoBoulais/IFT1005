@@ -3,77 +3,28 @@ Jordan Boulais-Richard - 20200086
 Salla Sy - 20284651
 */
 
-/*Meme font-family pour toute la page*/
 body {
-  padding-top: 10px;
-  font-family: Verdana, Arial, sans-serif;
-  color: #40407A;
-  width: 80%;
-  margin: 0 auto;
 }
 
 header, footer {
-  background-color: #80CBC4;
-  text-align: center;
 }
 
-/* padding et font size dans top title*/
 header h1 {
-  margin: 0;
-  padding: 12px;
-  font-size: 46px;
 }
 
-/* Meme font-weight pour h1, h2*/
+
 h1, h2 {
-  font-weight: 900;
 }
 
 h3 {
-  font-size: 22px;
-  margin: 0;
-  padding: 0;
 }
 
 nav {
-  padding-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  font-size: 23px;
 }
 
-/* Affecter directement le text du nav*/
 nav a {
-  text-decoration: none;
-  font-weight: 900;
 }
 
-/*parametre text principal*/
-main {
-  font-weight: 400;
-  font-size: 1.4em;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/*Distance des bullets points au bord de gauche*/
-ul {
-  margin-left: 1em;
-}
-
-/*Couleur background uniquement contenu de la page*/
 #wrapper {
-  background-color: #f3f3f4;
-  padding: 0.6em 0.8em;
-}
 
-.p_classes {
-  margin: 0 0 0 2.5em;
-  text-align: left;
-}
-
-/*Ajout margin dernier paragraphe*/
-#p_classes_last {
-  margin-bottom: 1em;
 }
