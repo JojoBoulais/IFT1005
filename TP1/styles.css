@@ -4,39 +4,41 @@ Salla Sy - 20284651
 */
 
 body {
-    padding-top: 10px;
     font-family: Verdana, Arial, sans-serif;
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
-
-
 header {
-    background-color: black;
+    padding: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: Verdana;
+    gap: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: black;
+    border-left: #7e7e7e solid 1px;
+    padding-left: 30px;
+}
+
+header img {
+    float: right;
 }
 
 footer {
     text-align: center;
     color: white;
-    background-color: #1f1f1f;
-}
-
-header h1 {
-    font-size: 120px;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    padding-left: 70px;
-    color: white;
-}
-
-header img {
-    float: right;
+    border-top: 1px solid #7e7e7e;
+    color: #7e7e7e;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1,
@@ -54,14 +56,14 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
-    padding-left: 8px;
+    padding-left: 25px;
     border-left: 1px solid #1f1f1f;
-    ;
 }
 
 
 nav {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -71,14 +73,20 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #f3f3f4;
+    color: white;
+    margin: 3px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+    padding-bottom: 3px;
+    font-size: 20px;
 }
 
 nav a:hover {
-    text-decoration: none;
-    color: #1f1f1f;
-    background-color: #f3f3f4;
-    ;
+    border-bottom: 3px solid #9797f5;
+}
+
+.current-nav-a {
+    border-bottom: 3px solid #9797f5;
 }
 
 #wrapper {}
@@ -127,7 +135,31 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.legend-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.legend-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.legend-info {
+    text-align: justify;
+}
+
 .portrait {
+    top: 0;
     border-radius: 15px;
     float: left;
 }
@@ -145,6 +177,6 @@ ol li {
     margin: 10px;
     color: #333;
     font-weight: 500;
-    margin-left: 27%;
+    margin-left: 5%;
 }
 
