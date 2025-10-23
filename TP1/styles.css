@@ -16,19 +16,22 @@ header {
     align-items: center;
     font-family: Verdana;
     gap: 30px;
+    background-color: #313131;
+    border-bottom: #7e7e7e solid 1px;
 }
 
 header h1 {
     font-size: 30px;
     padding: 0;
     margin: 0;
-    color: black;
+    color: #ffffff;
     border-left: #7e7e7e solid 1px;
     padding-left: 30px;
+    background-color: #1f1f20;
 }
 
 header img {
-    float: right;
+    float: left;
 }
 
 footer {
@@ -69,6 +72,8 @@ nav {
     gap: 25px;
     font-size: 23px;
     background-color: #1f1f1f;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -180,3 +185,10 @@ ol li {
     margin-left: 5%;
 }
 
+#soccer-field-img{
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  height: auto;
+  float: none;
+}
