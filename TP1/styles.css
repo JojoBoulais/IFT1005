@@ -44,11 +44,6 @@ footer {
     margin-right: auto;
 }
 
-h1,
-h2 {}
-
-h3 {}
-
 main {
     margin-top: 50px;
     font-weight: 400;
@@ -93,8 +88,6 @@ nav a:hover {
 .current-nav-a {
     border-bottom: 3px solid #9797f5;
 }
-
-#wrapper {}
 
 .sources-images {
     font-size: 15px;
