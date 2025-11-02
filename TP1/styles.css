@@ -3,10 +3,28 @@ Jordan Boulais-Richard - 20200086
 Salla Sy - 20284651
 */
 
+html {
+  overflow-y: scroll;
+}
+
 body {
     font-family: Verdana, Arial, sans-serif;
     margin: 0 auto;
     width: 80%;
+}
+
+main {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-left: 25px;
+    border-left: 1px solid #1f1f1f;
 }
 
 header {
@@ -34,31 +52,6 @@ header img {
     float: left;
 }
 
-footer {
-    text-align: center;
-    color: white;
-    border-top: 1px solid #7e7e7e;
-    color: #7e7e7e;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    margin-top: 50px;
-    font-weight: 400;
-    font-size: 1.4em;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    padding-left: 25px;
-    border-left: 1px solid #1f1f1f;
-}
-
-
 nav {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -76,17 +69,59 @@ nav a {
     color: white;
     margin: 3px;
     border-bottom: 3px solid transparent;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s;;
     padding-bottom: 3px;
     font-size: 20px;
 }
 
 nav a:hover {
     border-bottom: 3px solid #9797f5;
+    background-color: #313132;
 }
 
 .current-nav-a {
     border-bottom: 3px solid #9797f5;
+}
+
+
+#badge {
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(-45deg, #ff4e47 30%, #9797f5);
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#badge:hover {
+  background-image: linear-gradient(-45deg, #9797f5 30%, #ff4e47);
+}
+
+#badge-interior {
+    color: white;
+    padding-left: 1px;
+    padding-right: 1px;
+    border: white solid 1px;
+    margin: 3px;
+    font-weight: bold;
+    user-select: none;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    color: #7e7e7e;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#badge-svg {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #7e7e7e;
 }
 
 .sources-images {
@@ -144,12 +179,6 @@ nav a:hover {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.legend-card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .legend-info {
@@ -160,6 +189,18 @@ nav a:hover {
     top: 0;
     border-radius: 15px;
     float: left;
+}
+
+.club-card {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 ol {
@@ -178,10 +219,31 @@ ol li {
     margin-left: 5%;
 }
 
+
+.club-card ol li {
+    margin: 10px;
+    color: #333;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-right: auto;
+    width: fit-content;
+}
+
 #soccer-field-img{
-  display: block;
-  margin: 20px auto;
-  width: 500px;
-  height: auto;
-  float: none;
+    margin-right: 20px;
+    width: 500px;
+    height: auto;
+    float: left;
+}
+
+.clearleft {clear: left;}
+
+.signet {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    color: #7e7e7e;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
 }

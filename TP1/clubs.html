@@ -11,6 +11,7 @@ Salla Sy - 20284651
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <a id="signet-top"></a>
         <div id="wrapper">
         <header>
             <img src="assets/fanatica_final.png" alt="soccer field" width="170">
@@ -29,8 +30,9 @@ Salla Sy - 20284651
                 Ces monuments du football (soccer) sont connus pour leurs victoires, leur influence chez les fans de soccer ainsi
                 que les joueurs l&eacute;gendaires qui ont marqu&eacute; de leur empreinte leur club.
             </p>
+            <a class="signet" href="#signet-bottom">[BOTTOM]</a>
             <hr>
-            <section>
+            <section class="club-card">
                 <h2>FC Barcelone</h2>
                 <img src="assets/vector-fc-barcelona.jpg" alt="FC Barcelone" width="150" class="logo">
                 <p>Fond&eacute; en 1899, le <strong>FC Barcelone</strong> est bien plus qu'un club (“M&eacute;s que un club”).
@@ -48,7 +50,7 @@ Salla Sy - 20284651
 
             <hr>
 
-            <section>
+            <section class="club-card">
                 <h2>Real Madrid</h2>
                 <img src="assets/Real-Madrid-logo.png" alt="Real Madrid" width="150" class="logo">
                 <p>Fond&eacute; en 1902, le <strong>Real Madrid</strong> est le club le plus titr&eacute; d'Europe.
@@ -66,7 +68,7 @@ Salla Sy - 20284651
 
             <hr>
 
-            <section>
+            <section class="club-card">
                 <h2>Liverpool FC</h2>
                 <img src="assets/badge-liverpool.jpg" alt="Liverpool FC" width="150" class="logo">
                 <p>Fond&eacute; en 1892, <strong>Liverpool</strong> est le cœur du football anglais.
@@ -83,7 +85,7 @@ Salla Sy - 20284651
 
             <hr>
 
-            <section>
+            <section class="club-card">
                 <h2>Manchester United</h2>
                 <img src="assets/Manchester_United_F.C.-Logo.wine.png" alt="Manchester United" width="150" class="logo">
                 <p>Cr&eacute;&eacute; en 1878, <strong>Manchester United</strong> est l'un des cluba les plus populaire au monde.
@@ -101,7 +103,7 @@ Salla Sy - 20284651
 
             <hr>
 
-            <section>
+            <section class="club-card">
                 <h2>Juventus</h2>
                 <img src="assets/Juventus-logo.png" alt="Juventus" width="150" class="logo">
                 <p>Fond&eacute;e en 1897, la <strong>Juventus de Turin</strong> domine le football italien.
@@ -118,13 +120,13 @@ Salla Sy - 20284651
 
             <hr>
 
-            <section>
+            <section class="club-card">
                 <h2>AC Milan</h2>
                 <img src="assets/A.C._Milan-Logo.wine.png" alt="AC Milan" width="150" class="logo">
                 <p>Fond&eacute; en 1899, l'<strong>AC Milan</strong> a marqu&eacute; le football europ&eacute;en par son &eacute;l&eacute;gance et son
                     efficacit&eacute;.
                     Les ann&eacute;es dor&eacute;es avec Maldini, Kak&aacute; et Van Basten ont forg&eacute; sa l&eacute;gende.</p>
-                <p><strong>Palmar&egrave; :</strong></p>
+                <p><strong>Palmar&egrave;s :</strong></p>
                 <ol>
                     <li>7 Ligues des Champions</li>
                     <li>19 Championnats d'Italie</li>
@@ -133,11 +135,32 @@ Salla Sy - 20284651
                     <li>3 Coupes Intercontinentales</li>
                 </ol>
             </section>
-            </section>
+            <hr>
+            <a class="signet" id="signet-bottom" href="#signet-top">[TOP]</a>
         </main>
         <footer>
-            <strong>Jordan Boulais-Richard - Salla Sy</strong>
-            <p>10/18/2025</p>
+            <div id="badge-svg">
+                <div id="badge">
+                    <p id="badge-interior">
+                    F
+                    </p>
+                </div>
+                <svg width="60" height="60">
+                    <g transform="translate(0, 0) scale(0.3)">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill=#EDEDED />
+                        <polygon points="60 13,110 48,92 110,30 110,13 48" transform="translate(62.5,62.5) scale(0.2) rotate(180)"/>
+                        <polygon points="60 13,110 48,92 110,30 110,13 48" transform="translate(19,12) scale(0.2) rotate(0)"/>
+                        <polygon points="60 13,110 48,92 110,38 110,3 48" transform="translate(12,55) scale(0.2) rotate(0)"/>
+                        <polygon points="60 13,110 48,92 110,30 110,13 48" transform="translate(57,12) scale(0.2) rotate(0)"/>
+                        <polygon points="60 13,110 50,77 110,30 110,13 48" transform="translate(65,55) scale(0.2) rotate(0)"/>
+                        <polygon points="60 13,110 48,92 75,30 75,13 48" transform="translate(39,75) scale(0.2) rotate(0)"/>
+                    </g>
+                </svg>
+            </div>
+            <p>
+                <strong>Jordan Boulais-Richard - Salla Sy</strong><br>
+                11/05/2025
+            </p>
         </footer>
     </div>
 </body>
