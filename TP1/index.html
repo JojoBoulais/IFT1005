@@ -5,52 +5,80 @@ Salla Sy - 20284651
 
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>FANATICA</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <img src="assets/fanatica_final.png" alt="Fanatica logo" width="170">
-            <h1>FANATICA</h1>
-        </header>
-        <nav>
-            <a href="index.html" class="current-nav-a">Accueil</a> &nbsp;
-            <a href="ligues.html">Ligues</a> &nbsp;
-            <a href="legendes.html">Legendes</a> &nbsp;
-            <a href="clubs.html">Clubs</a> &nbsp;
-            <a href="a_propos.html">À Propos</a> &nbsp;
-        </nav>
-            <main>
-                <p>
-                    Le but de notre site web est d’informer et de guider les nouveaux amateurs de soccer en
-                    leur offrant un aperçu complet de cet univers passionnant. Nous présentons des informations
-                    détaillées sur les différentes compétitions qui rythment la saison, qu’il s’agisse
-                    des tournois nationaux, continentaux ou mondiaux.
-                </p>
-                <p>
-                    Vous y trouverez également des portraits inspirants des grandes légendes du soccer,
-                    accompagnés de leur biographie, de leurs statistiques marquantes et des moments forts
-                    qui ont façonné leur carrière. Enfin, notre site met en valeur les clubs les plus
-                    populaires à travers le monde, en présentant leur histoire, leurs joueurs emblématiques
-                    et les trophées qu’ils ont remportés au fil des années.
-                </p>
-                    <img id="soccer-field-img"  src="assets/soccer_field.jpg" alt="soccer field">
-                <p>
-                    Notre objectif est de transmettre la passion du soccer et de permettre à
-                    chacun, qu’il soit débutant ou curieux, de mieux comprendre et d’apprécier
-                    la richesse de ce sport universel.
 
+<head>
+    <title>FANATICA</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/fanatica_final.png" alt="Fanatica logo" width="170">
+        <h1>FANATICA</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="current-nav-a">Accueil</a> &nbsp;
+        <a href="ligues.html">Ligues</a> &nbsp;
+        <a href="legendes.html">Legendes</a> &nbsp;
+        <a href="clubs.html">Clubs</a> &nbsp;
+        <a href="a_propos.html">À Propos</a> &nbsp;
+    </nav>
+    <main>
+        <div>
+            <img id="soccer-field-img" src="assets/soccer_field.jpg" alt="soccer field">
+            <p>
+                Le but de notre site web est d’informer et de guider les nouveaux amateurs de soccer en
+                leur offrant un aperçu complet de cet univers passionnant. Nous présentons des informations
+                détaillées sur les différentes compétitions qui rythment la saison, qu’il s’agisse
+                des tournois nationaux, continentaux ou mondiaux.
+                Vous y trouverez également des portraits inspirants des grandes légendes du soccer,
+                accompagnés de leur biographie, de leurs statistiques marquantes et des moments forts
+                qui ont façonné leur carrière. Enfin, notre site met en valeur les clubs les plus
+                populaires à travers le monde, en présentant leur histoire, leurs joueurs emblématiques
+                et les trophées qu’ils ont remportés au fil des années. Notre objectif est de transmettre la passion du
+                soccer et de permettre à
+                chacun, qu’il soit débutant ou curieux, de mieux comprendre et d’apprécier
+                la richesse de ce sport universel.
+            </p>
+            <br class=“clearleft”>
+            <p>
+                Pour naviguer sur notre site web, il vous suffit de
+                choisir la page souhaitée dans la barre de navigation.
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <div id="badge-svg">
+            <div id="badge">
+                <p id="badge-interior">
+                    F
                 </p>
-                <p>
-                    Pour naviguer sur notre site web, il vous suffit de
-                    choisir la page souhaitée dans la barre de navigation.
-                </p>
-            </main>
-            <footer>
-                <strong>Jordan Boulais-Richard - Salla Sy</strong>
-                <p>10/18/2025</p>
-            </footer>
-    </body>
+            </div>
+            <svg width="60" height="60">
+                <g transform="translate(0, 0) scale(0.3)">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill=#EDEDED />
+                    <polygon points="60 13,110 48,92 110,30 110,13 48"
+                        transform="translate(62.5,62.5) scale(0.2) rotate(180)" />
+                    <polygon points="60 13,110 48,92 110,30 110,13 48"
+                        transform="translate(19,12) scale(0.2) rotate(0)" />
+                    <polygon points="60 13,110 48,92 110,38 110,3 48"
+                        transform="translate(12,55) scale(0.2) rotate(0)" />
+                    <polygon points="60 13,110 48,92 110,30 110,13 48"
+                        transform="translate(57,12) scale(0.2) rotate(0)" />
+                    <polygon points="60 13,110 50,77 110,30 110,13 48"
+                        transform="translate(65,55) scale(0.2) rotate(0)" />
+                    <polygon points="60 13,110 48,92 75,30 75,13 48"
+                        transform="translate(39,75) scale(0.2) rotate(0)" />
+                </g>
+            </svg>
+        </div>
+        <p>
+            <strong>Jordan Boulais-Richard - Salla Sy</strong><br>
+            11/05/2025
+        </p>
+    </footer>
+</body>
+
 </html>
