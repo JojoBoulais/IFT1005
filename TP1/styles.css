@@ -4,184 +4,123 @@ Salla Sy - 20284651
 */
 
 body {
-    font-family: Verdana, Arial, sans-serif;
-    margin: 0 auto;
-    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
 }
 
+#wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #2f5cb4;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+
 header {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana;
-    gap: 30px;
-    background-color: #313131;
-    border-bottom: #7e7e7e solid 1px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-    color: #ffffff;
-    border-left: #7e7e7e solid 1px;
-    padding-left: 30px;
-    background-color: #1f1f20;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffda00;
+    margin-bottom: 10px;
 }
 
 header img {
-    float: left;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    background-color: #1c3b75;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0 15px;
+    background-color: #ff7b00;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #ffc400;
+    box-shadow: 0 0 8px #ffd700;
+}
+
+
+main {
+    text-align: center;
+    line-height: 1.8;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+section img {
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ffda00;
+}
+
+section img:hover {
+    box-shadow: 0 0 15px #ffda00;
+}
+
+section h2 {
+    color: #ffda00;
+    margin-top: 15px;
+}
+
+section ol, section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    background-color: #3a63c0;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+section li:hover {
+    background-color: #4a74d1;
 }
 
 footer {
     text-align: center;
-    color: white;
-    border-top: 1px solid #7e7e7e;
-    color: #7e7e7e;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main {
-    margin-top: 50px;
-    font-weight: 400;
-    font-size: 1.4em;
-    text-align: justify;
-    text-justify: inter-word;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    padding-left: 25px;
-    border-left: 1px solid #1f1f1f;
-}
-
-
-nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    font-size: 23px;
-    background-color: #1f1f1f;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 3px;
-    border-bottom: 3px solid transparent;
-    transition: border-color 0.3s;
-    padding-bottom: 3px;
-    font-size: 20px;
-}
-
-nav a:hover {
-    border-bottom: 3px solid #9797f5;
-}
-
-.current-nav-a {
-    border-bottom: 3px solid #9797f5;
-}
-
-.sources-images {
-    font-size: 15px;
-    color: #1f1f1f;
-}
-
-.ligues-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    padding: 15px;
+    background-color: #1c3b75;
+    border-radius: 10px;
     margin-top: 30px;
+    color: #ddd;
 }
 
-.ligue-card {
-    width: 260px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.ligue-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.ligue-card img {
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.ligue-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0077cc;
-    text-decoration: none;
-}
-
-.ligue-card a:hover {
-    text-decoration: underline;
-}
-
-.legend-card {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.legend-card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.legend-info {
-    text-align: justify;
-}
-
-.portrait {
-    top: 0;
-    border-radius: 15px;
-    float: left;
-}
-
-ol {
-    list-style-type: decimal;
-    margin-left: 30px;
-    padding-left: 15px;
-    background-color: #f3f3f3;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-ol li {
-    margin: 10px;
-    color: #333;
-    font-weight: 500;
-    margin-left: 5%;
-}
-
-#soccer-field-img{
-  display: block;
-  margin: 20px auto;
-  width: 500px;
-  height: auto;
-  float: none;
+footer strong {
+    color: #ffda00;
 }
