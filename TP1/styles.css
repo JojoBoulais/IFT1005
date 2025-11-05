@@ -11,6 +11,7 @@ body {
     font-family: Verdana, Arial, sans-serif;
     margin: 0 auto;
     width: 80%;
+    background-color:gainsboro;
 }
 
 main {
@@ -109,8 +110,8 @@ nav a:hover {
 }
 
 footer {
-    background-color: #002B5B;
-    color: white;
+    background-color:#f3f3f3;
+    color: black;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
