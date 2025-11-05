@@ -11,7 +11,6 @@ body {
     font-family: Verdana, Arial, sans-serif;
     margin: 0 auto;
     width: 80%;
-    background-color:gainsboro;
 }
 
 main {
@@ -33,7 +32,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     gap: 30px;
     background-color: #313131;
     border-bottom: #7e7e7e solid 1px;
@@ -47,6 +46,20 @@ header h1 {
     border-left: #7e7e7e solid 1px;
     padding-left: 30px;
     background-color: #1f1f20;
+    user-select: none;
+}
+
+.page-title {
+    color: #ffffff;
+    background-color: #9797f5;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 header img {
@@ -71,7 +84,6 @@ nav a {
     margin: 3px;
     border-bottom: 3px solid transparent;
     transition: border-color 0.3s, background-color 0.3s;
-    ;
     padding-bottom: 3px;
     font-size: 20px;
 }
@@ -84,7 +96,6 @@ nav a:hover {
 .current-nav-a {
     border-bottom: 3px solid #9797f5;
 }
-
 
 #badge {
     width: fit-content;
@@ -110,14 +121,12 @@ nav a:hover {
 }
 
 footer {
-    background-color:#f3f3f3;
     color: black;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
     font-size: 0.9em;
 }
-
 
 #badge-svg {
     justify-content: center;
