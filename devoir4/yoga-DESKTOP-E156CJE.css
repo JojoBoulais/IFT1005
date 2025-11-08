@@ -39,31 +39,7 @@ h1:hover {
     color: #FFFFFF;
 }
 
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    border-left: 3px solid #cbcbcb;
-    border-top: 3px solid #cbcbcb;
-    border-right: 3px solid #777778;
-    border-bottom: 3px solid #777778;
-    background-color: #fff;
-}
-
-nav a:link {
-    color: #3F2860;
-}
-
-nav a:visited {
-    color: #497777;
-}
-
-nav a:hover {
-    color: #A26100;
-    border-left-color: #333333;
-    border-top-color: #333333;
-}
-
-body#index nav {
+nav {
     float: left;
     font-weight: bold;
     text-align: center;
@@ -72,7 +48,7 @@ body#index nav {
     height: 100%;
 }
 
-body#index nav a {
+nav a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -86,21 +62,19 @@ body#index nav a {
     margin-bottom: 1em;
 }
 
-body#classes nav {
-    float: left;
-    width: 10em;
-    padding-top: 2em;
-    padding-left: 1em;
-    text-align: center;
+nav a:link {
+    color: #3F2860;
 }
 
-body#classes nav a {
-    display: block;
-    width: 125px;
-    padding: 12px 0;
-    margin: 0 auto 1em auto;
+nav a:visited {
+    color: #497777;
 }
 
+nav a:hover {
+    border-left: #333333 solid 3px;
+    border-top: #333333 solid 3px;
+    color: #A26100;
+}
 
 main {
     padding-left: 12em;
@@ -117,10 +91,7 @@ img {
 }
 
 #hero {
-    text-align: justify;
-    margin-bottom: 2em;
-    margin-left: 2em;
-    ;
+    text-align: center;
 }
 
 #door {
@@ -143,39 +114,3 @@ footer {
     clear: left;
 }
 
-.courses {
-    display: flex;
-    justify-content: space-between;
-    gap: 2%;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 50px;
-}
-
-.course {
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-}
-
-.course h2 {
-    color: #40407a;
-    margin: 0 0 0.4em 0;
-    font-size: 1.05em;
-}
-
-.course p {
-    margin: 0;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #3F2860;
-}
-
-h2 {
-    margin-left: 20px;
-    margin-top: 3%;
-}
-
-.course section {
-    font-weight: normal;
-}
