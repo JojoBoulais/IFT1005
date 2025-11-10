@@ -39,16 +39,6 @@ h1:hover {
     color: #FFFFFF;
 }
 
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    border-left: 3px solid #cbcbcb;
-    border-top: 3px solid #cbcbcb;
-    border-right: 3px solid #777778;
-    border-bottom: 3px solid #777778;
-    background-color: #fff;
-}
-
 nav a:link {
     color: #3F2860;
 }
@@ -63,7 +53,7 @@ nav a:hover {
     border-top-color: #333333;
 }
 
-body#index nav {
+nav {
     float: left;
     font-weight: bold;
     text-align: center;
@@ -72,7 +62,7 @@ body#index nav {
     height: 100%;
 }
 
-body#index nav a {
+nav a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -86,24 +76,9 @@ body#index nav a {
     margin-bottom: 1em;
 }
 
-body#classes nav {
-    float: left;
-    width: 10em;
-    padding-top: 2em;
-    padding-left: 1em;
-    text-align: center;
-}
-
-body#classes nav a {
-    display: block;
-    width: 125px;
-    padding: 12px 0;
-    margin: 0 auto 1em auto;
-}
-
 
 main {
-    padding-left: 12em;
+    padding-left: 12.5em;
     padding-right: 1em;
 }
 
@@ -117,10 +92,9 @@ img {
 }
 
 #hero {
-    text-align: justify;
-    margin-bottom: 2em;
-    margin-left: 2em;
-    ;
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 #door {
@@ -145,15 +119,15 @@ footer {
 
 .courses {
     display: flex;
-    justify-content: space-between;
-    gap: 2%;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 50px;
+    column-gap: 5em;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    margin-top: 2.5em;
 }
 
 .course {
-    width: 32%;
+    width: 20em;
+    row-gap: 0.5em;
     display: flex;
     flex-direction: column;
 }
@@ -172,7 +146,6 @@ footer {
 }
 
 h2 {
-    margin-left: 20px;
     margin-top: 3%;
 }
 
