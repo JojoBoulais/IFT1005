@@ -1,0 +1,72 @@
+<!--
+Jordan Boulais-Richard - 20200086
+Salla Sy - 20284651
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Studio de Yoga Chemin de Lumière</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta charset="utf-8" />
+    <link href="yoga.css" rel="stylesheet">
+</head>
+
+<body id="index">
+    <div id="wrapper">
+        <div id="header-nav">
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="#">Cours</a>
+                <a href="schedule.html">Horaire</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <header>
+                    <h1>Studio de Yoga Chemin de Lumière</h1>
+            </header>
+        </div>
+        <div id="main-footer-border">
+            <div id="main-footer">
+                <main>
+                    <h2>Contactez le Studio de Yoga Chemin de Lumière</h2>
+                    <p>Remplissez le formulaire ci-dessous pour contacter le Studio de Yoga Chemin de Lumière. Toutes les informations sont requises.</p>
+                    <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+                        <div>
+                            <label for="myName">Nom :</label>
+                            <input type="text" name="myName" id="myName" required>
+                        </div>
+
+                        <div>
+                            <label for="myEmail">Courriel :</label>
+                            <input type="email" name="myEmail" id="myEmail" required>
+                        </div>
+
+                        <div>
+                            <label for="myRefer">Comment avez-vous entendu parler de nous ?</label>
+                            <input list="myRefers" id="myRefer" name="myRefer" required>
+                            <datalist id="myRefers">
+                                <option value="Google">
+                                <option value="Bing">
+                                <option value="Facebook">
+                                <option value="Ami(e)">
+                                <option value="Annonce radio">
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="myComments">Commentaires :</label>
+                            <textarea name="myComments" id="myComments" required></textarea>
+                        </div>
+                            <input type="submit" id="submit" value="Envoyer">
+                    </form>
+                </main>
+                <footer>
+                    Copyright &copy; 2020 Studio de Yoga Chemin de Lumière<br>
+                    <a href="mailto:prenom@nomdefamille.com">prenom@nomdefamille.com</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/*
+Jordan Boulais-Richard - 20200086
+Salla Sy - 20284651
+*/
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#header-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(assets/sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 352px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 5em;
+    color: #ffffff;
+}
+
+h1:hover {
+    color: #FFFFFF;
+}
+
+nav a:link {
+    color: #3F2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+nav {
+    display: flex;
+    gap: 3em;
+    font-weight: bold;
+    justify-content: flex-end;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+#main-footer-border {
+    background-color: #40265c;
+    padding-bottom: 6em;
+}
+
+#main-footer {
+    background-color: #f3f3f4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 3em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 2em;
+}
+
+main {
+    color: #40265c;
+}
+
+footer {
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    padding-top: 0;
+}
+
+h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h3 {
+   text-align: center;
+    padding-top: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #40265c;
+    margin: 0 auto;
+    width: auto;
+}
+
+th, td {
+    border: 1px solid #40265c;
+    padding: 0.5em;
+}
+
+/* Header */
+thead tr {
+    background-color: #ffffff;
+}
+
+th:first-child {
+    width: 12em;
+}
+
+th:last-child {
+    width: 30em;
+}
+
+/* Alternance des rangées du corps */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #dbe8e9;
+}
+
+#yoga-lounge {
+    padding-top: 1em;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Arial, sans-serif;
+}
+
+form div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+form label {
+    width: 25em;
+    text-align: right;
+}
+
+form input, #myComments {
+    width: 70em;
+}
+
+form #myRefer {
+    height: 3em;
+}
+
+form #submit {
+    width: 10em;
+    margin-left: 14.25em;
+    font-weight: bold;
+}
