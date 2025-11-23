@@ -185,12 +185,11 @@ form #submit {
 
     /* Le header : titre centré et le nav rapproché */
     h1 {
-        padding-left: 2em;
-        font-size: 1.8em;
+        padding-left: 3em;
     }
 
     nav {
-        gap: 1.5em;
+        gap: 3em;
         margin-right: 0.5em;
     }
 
@@ -210,43 +209,58 @@ form #submit {
     }
 
     form #submit {
-        margin-left: 12em;
+    margin-left: 17.5em;
     }
 
     table {
         max-width: 90%;
         font-size: 0.9em;
     }
+
+    #main-footer-border {
+        background-color: #f3f3f4;
+        padding-bottom: 0;
+    }
+
+    #main-footer {
+        background-color: #f3f3f4;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-top: 3em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        padding-bottom: 2em;
+    }
+
+    main {
+        color: #40265c;
+    }
 }
 
 /* Taille petite */
 @media (max-width: 599px) {
 
-    /* Le header : nav en colonne, centré */
-    #header-nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     nav {
-        flex-direction: column;
-        gap: 0.5em;
-        font-size: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 6em;
+        row-gap: 0;
+        font-weight: bold;
+        margin: 1em;
         justify-content: center;
-        margin: 0;
-        padding: 0;
     }
 
     h1 {
-        padding-left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
         padding-top: 20px;
-        text-align: center;
-        font-size: 1.5em;
+        text-align: justify;
     }
 
     header {
-        height: 250px;
+        height: 200px;
     }
 
     #yoga-lounge {
@@ -255,16 +269,23 @@ form #submit {
 
     /* Tableau : scroll horizontal */
     table {
-        width: 100%;
+        width: fit-content;
         font-size: 0.8em;
         display: block;
         overflow-x: auto;
         white-space: nowrap;
     }
 
-    th:first-child,
+    th:first-child {
+        width: 6em;
+    }
+
     th:last-child {
-        width: auto;
+        width: 15em;
+    }
+
+    #yoga-lounge {
+        display: none;
     }
 
     /* formulaires sous forme de colonne */
@@ -292,11 +313,13 @@ form #submit {
 
     form #myRefer {
         width: 100%;
+        height: 1em;
     }
 
     form #submit {
         margin-left: 0;
         align-self: center;
-        width: 50%;
+        width: 100%;
     }
+
 }
