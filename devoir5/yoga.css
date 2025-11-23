@@ -97,7 +97,7 @@ h2 {
 }
 
 h3 {
-   text-align: center;
+    text-align: center;
     padding-top: 1em;
 }
 
@@ -108,7 +108,8 @@ table {
     width: auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #40265c;
     padding: 0.5em;
 }
@@ -164,7 +165,8 @@ form label {
     text-align: right;
 }
 
-form input, #myComments {
+form input,
+#myComments {
     width: 70em;
 }
 
@@ -176,4 +178,125 @@ form #submit {
     width: 10em;
     margin-left: 14.25em;
     font-weight: bold;
+}
+
+/* Taille moyenne */
+@media (max-width: 1023px) {
+
+    /* Le header : titre centré et le nav rapproché */
+    h1 {
+        padding-left: 2em;
+        font-size: 1.8em;
+    }
+
+    nav {
+        gap: 1.5em;
+        margin-right: 0.5em;
+    }
+
+    #yoga-lounge {
+        height: 300px;
+    }
+
+    /* Le formulaire devient moins large */
+    form label {
+        width: 15em;
+        text-align: right;
+    }
+
+    form input,
+    #myComments {
+        width: 30em;
+    }
+
+    form #submit {
+        margin-left: 12em;
+    }
+
+    table {
+        max-width: 90%;
+        font-size: 0.9em;
+    }
+}
+
+/* Taille petite */
+@media (max-width: 599px) {
+
+    /* Le header : nav en colonne, centré */
+    #header-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5em;
+        font-size: 1em;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    header {
+        height: 250px;
+    }
+
+    #yoga-lounge {
+        height: 200px;
+    }
+
+    /* Tableau : scroll horizontal */
+    table {
+        width: 100%;
+        font-size: 0.8em;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th:first-child,
+    th:last-child {
+        width: auto;
+    }
+
+    /* formulaires sous forme de colonne */
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3em;
+    }
+
+    form label {
+        width: auto;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    form input,
+    #myComments {
+        width: 100%;
+    }
+
+    form #myRefer {
+        width: 100%;
+    }
+
+    form #submit {
+        margin-left: 0;
+        align-self: center;
+        width: 50%;
+    }
 }
