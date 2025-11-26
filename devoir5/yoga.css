@@ -9,10 +9,6 @@ body {
 
 }
 
-#wrapper {
-
-}
-
 #header-nav {
     display: flex;
     flex-direction: column;
